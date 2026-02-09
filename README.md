@@ -1,102 +1,68 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- 
+Autor: Andreu
+Fecha: 09/02/2026
+Documento final con todas las tareas de HTML y CSS (1 a 9)
+Incluye comentarios, estilos, colores, transparencias y opacidades.
+-->
+
+<!DOCTYPE html> <!-- Tarea 3 -->
+<html lang="es"> <!-- Tarea 3 -->
+
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora Web – Documentación</title>
+    <meta charset="UTF-8"> <!-- Tarea 3 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tarea 3 -->
+    <title>Mi primera página CSS</title>
+
+    <style>
+        /* Estilos generales (Tareas 1 y 2) */
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+
+        /* Tarea 6: H1 color rojo (luego cambiado a HEX en Tarea 7) */
+        h1 {
+            color: #FF0000; /* Tarea 7 */
+            text-align: center;
+        }
+
+        /* Tarea 5: fondo gris en P */
+        /* Tarea 6: borde verde */
+        /* Tarea 7: borde verde en HEX */
+        p {
+            font-size: 20px;
+            color: black;
+            background-color: lightgray;
+            border: 5px solid #008000;
+            padding: 10px;
+        }
+
+        /* Tarea 8: transparencia con RGBA */
+        .transparente {
+            background-color: rgba(255, 99, 71, 0.5);
+            padding: 10px;
+        }
+
+        /* Tarea 9: opacity 0.5 */
+        .transparencia {
+            opacity: 0.5;
+        }
+    </style>
 </head>
-<body>
 
-  <h1>Calculadora Web – Documentación 📘</h1>
-  <p><strong>Versión:</strong> 1.0<br>
-  <strong>Fecha:</strong> 06/02/2026</p>
+<body> <!-- Tarea 3 -->
 
-  <p>Este documento describe el funcionamiento general de la calculadora web incluida en este repositorio.
-  Su objetivo es servir como guía para estudiantes y usuarios que quieran entender cómo está organizada la aplicación.</p>
+    <!-- Tarea 5: H1 con fondo naranja inline -->
+    <h1 style="background-color: orange;">Bienvenido a mi página</h1>
 
-  <hr>
+    <p>Estoy aprendiendo CSS desde cero.</p>
 
-  <h2>✨ Descripción general</h2>
-  <p>La calculadora es una aplicación web sencilla desarrollada con <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>.
-  Permite realizar operaciones básicas y está pensada como ejemplo educativo para aprender estructura de proyectos web.</p>
+    <!-- Tarea 8 -->
+    <h1 class="transparente">Este H1 tiene transparencia 0.5</h1>
 
-  <hr>
-
-  <h2>🧩 Estructura del proyecto</h2>
-  <ul>
-    <li><strong>HTML</strong> → Define la estructura de la interfaz.</li>
-    <li><strong>CSS</strong> → Aplica estilos visuales a los botones, pantalla y distribución.</li>
-    <li><strong>JavaScript</strong> → Contiene la lógica de las operaciones y la gestión de eventos.</li>
-  </ul>
-
-  <hr>
-
-  <h2>🧠 Funcionamiento general de las funciones</h2>
-
-  <h3>🔹 Captura de eventos</h3>
-  <p>El script detecta cuándo el usuario pulsa un botón (número u operación) y actualiza la pantalla.</p>
-
-  <h3>🔹 Gestión de operaciones</h3>
-  <p>El programa almacena:</p>
-  <ul>
-    <li>Primer número</li>
-    <li>Operación seleccionada</li>
-    <li>Segundo número</li>
-  </ul>
-  <p>Cuando el usuario pulsa “=”, se ejecuta la operación correspondiente.</p>
-
-  <h3>🔹 Control de errores</h3>
-  <p>La calculadora evita errores comunes como:</p>
-  <ul>
-    <li>División entre cero</li>
-    <li>Introducción de caracteres no válidos</li>
-    <li>Reinicio incorrecto del estado interno</li>
-  </ul>
-
-  <hr>
-
-  <h2>📚 Ejemplo de uso</h2>
-  <ol>
-    <li>Introduce un número.</li>
-    <li>Selecciona una operación (+, –, ×, ÷).</li>
-    <li>Introduce el segundo número.</li>
-    <li>Pulsa <strong>=</strong> para obtener el resultado.</li>
-    <li>Usa <strong>C</strong> para limpiar la pantalla.</li>
-  </ol>
-
-  <hr>
-
-  <h2>🧪 Compatibilidad</h2>
-  <p>La aplicación funciona en:</p>
-  <ul>
-    <li>Google Chrome</li>
-    <li>Firefox</li>
-    <li>Edge</li>
-    <li>Safari</li>
-  </ul>
-  <p>No requiere instalación ni dependencias externas.</p>
-
-  <hr>
-
-  <h1>✔️ Tareas pendientes</h1>
-  <ul>
-    <li>[x] Añadir funciones de memoria</li>
-    <li>[ ] Incluir conversión de binario a hex</li>
-    <li>[ ] Añadir pin de usuario</li>
-  </ul>
-
-  <hr>
-
-  <h1>🖼️ Imagen desde una URL</h1>
-  <p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/MOS_6502AD_4585S_top.jpg"
-         alt="Microprocesador 6502">
-  </p>
-
-  <hr>
-
-  <h2>📝 Nota final</h2>
-  <p>En Markdown <strong>no decides cómo se ve</strong>, decides <strong>qué es cada cosa</strong>.
-  El estilo visual depende de GitHub, del navegador o del visor utilizado.</p>
+    <!-- Tarea 9 -->
+    <p class="transparencia">Transparencia 0.5</p>
 
 </body>
 </html>
+
