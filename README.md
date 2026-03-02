@@ -65,4 +65,44 @@ Incluye comentarios, estilos, colores, transparencias y opacidades.
 
 </body>
 </html>
+classDiagram
 
+class Cantante {
+    +int id
+    +string nombre
+    +string generoMusical
+    +string pais
+}
+
+class Concierto {
+    +int id
+    +string nombre
+    +date fecha
+    +string lugar
+    +int entradasDisponibles
+    +double precioEntrada
+    +agregarCantante(c: Cantante)
+    +reducirEntradas(cantidad: int)
+}
+
+class Entrada {
+    +int id
+    +string codigo
+    +string tipo
+    +double precio
+}
+
+class Compra {
+    +int id
+    +string nombreComprador
+    +string correoComprador
+    +date fechaCompra
+    +int cantidadEntradas
+    +calcularTotal()
+}
+
+%% Relaciones
+Concierto "1" -- "0..*" Entrada : genera
+Concierto "1" -- "1..*" Cantante : presenta
+Compra "1" -- "1..*" Entrada : incluye
+Compra "0..*" -- "1" Concierto : pertenece_a
